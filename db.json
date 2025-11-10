@@ -2,29 +2,133 @@
   "users": [
     {
       "id": 1,
-      "name": "Alice",
-      "email": "alice@example.com",
-      "role": "admin"
+      "name": "Evelyn",
+      "email": "eve@neonlabs.io",
+      "role": "owner",
+      "achievements": [ "Top Writer", "Community Founder", "Mentor", "Premium Speaker" ],
+      "joinedAt": "2024-08-21",
+      "subscription": {
+        "plan": "Ultra Pro",
+        "price": 49.99,
+        "currency": "USD",
+        "renewDate": "2026-01-07"
+      },
+      "settings": {
+        "theme": "dark",
+        "language": "en",
+        "notifyEmail": true,
+        "notifyPush": true
+      }
     },
     {
       "id": 2,
-      "name": "Bob",
-      "email": "bob@example.com",
-      "role": "user"
+      "name": "Kai",
+      "email": "kai@neonlabs.io",
+      "role": "moderator",
+      "achievements": [ "Bug Hunter", "Security Analyst" ],
+      "joinedAt": "2025-01-12",
+      "subscription": {
+        "plan": "Basic",
+        "price": 0,
+        "currency": "USD",
+        "renewDate": null
+      },
+      "settings": {
+        "theme": "light",
+        "language": "uk",
+        "notifyEmail": true,
+        "notifyPush": false
+      }
+    },
+    {
+      "id": 3,
+      "name": "Nova",
+      "email": "nova@users.io",
+      "role": "user",
+      "achievements": [],
+      "joinedAt": "2025-02-03",
+      "subscription": {
+        "plan": "Free",
+        "price": 0,
+        "currency": "USD",
+        "renewDate": null
+      },
+      "settings": {
+        "theme": "dark",
+        "language": "en",
+        "notifyEmail": false,
+        "notifyPush": true
+      }
     }
   ],
   "posts": [
     {
       "id": 1,
-      "title": "Hello REST",
+      "title": "Future of AI-driven Development",
+      "description": "Thought analysis about how AI and autonomous development will change developer culture in next 4 years.",
       "userId": 1,
-      "tags": [ "intro", "rest" ]
+      "tags": [ "ai", "development", "future", "trends" ],
+      "likes": 142,
+      "views": 2140,
+      "published": true,
+      "createdAt": "2025-03-02"
     },
     {
       "id": 2,
-      "title": "JSON Tips",
+      "title": "How to Decrease Bundle Size on Frontend",
+      "description": "Vite, Compressors, Tree shaking, Rollup splitting guide.",
       "userId": 2,
-      "tags": [ "json" ]
+      "tags": [ "frontend", "optimization", "javascript" ],
+      "likes": 73,
+      "views": 931,
+      "published": true,
+      "createdAt": "2025-09-17"
+    },
+    {
+      "id": 3,
+      "title": "Dark UI Design Essentials",
+      "description": "Core rules how to professionally do dark UI theme correctly.",
+      "userId": 3,
+      "tags": [ "design", "ui", "dark-theme" ],
+      "likes": 20,
+      "views": 118,
+      "published": false,
+      "createdAt": "2025-11-01"
     }
-  ]
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "postId": 1,
+      "userId": 3,
+      "message": "This article blew my mind",
+      "createdAt": "2025-11-10T11:43:00"
+    },
+    {
+      "id": 2,
+      "postId": 2,
+      "userId": 1,
+      "message": "Add example with Vite too!",
+      "createdAt": "2025-11-10T12:01:04"
+    }
+  ],
+  "notifications": [
+    {
+      "id": 1,
+      "userId": 3,
+      "message": "You got tagged in a comment",
+      "read": false
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "message": "New subscriber joined your course",
+      "read": true
+    }
+  ],
+  "system": {
+    "version": "2.4.7",
+    "lastDeploy": "2025-10-28T23:11:19",
+    "environment": "production"
+  }
 }
